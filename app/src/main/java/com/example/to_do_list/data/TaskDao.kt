@@ -8,9 +8,6 @@ interface TaskDao {
     @Query("SELECT * FROM tasks ORDER BY id DESC")
     fun getAllTasks(): Flow<List<TaskEntity>>
 
-    @Query("SELECT * FROM tasks WHERE id = :taskId")
-    suspend fun getTaskById(taskId: Int): TaskEntity?
-
     @Query("SELECT * FROM tasks WHERE priority = :priority ORDER BY id DESC")
     fun getTasksByPriority(priority: String): Flow<List<TaskEntity>>
 
@@ -25,7 +22,4 @@ interface TaskDao {
 
     @Delete
     suspend fun deleteTask(task: TaskEntity)
-
-    @Query("DELETE FROM tasks WHERE id = :taskId")
-    suspend fun deleteTaskById(taskId: Int)
 }

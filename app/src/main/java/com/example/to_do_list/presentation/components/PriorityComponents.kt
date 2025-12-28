@@ -17,18 +17,22 @@ import com.example.to_do_list.ui.theme.PriorityHigh
 import com.example.to_do_list.ui.theme.PriorityLow
 import com.example.to_do_list.ui.theme.PriorityMedium
 
+fun getPriorityColor(priority: Priority): Color {
+    return when (priority) {
+        Priority.LOW -> PriorityLow
+        Priority.MEDIUM -> PriorityMedium
+        Priority.HIGH -> PriorityHigh
+        Priority.CRITICAL -> PriorityCritical
+    }
+}
+
 @Composable
 fun PriorityChip(
     priority: Priority,
     isSelected: Boolean,
     onClick: () -> Unit
 ) {
-    val priorityColor = when (priority) {
-        Priority.LOW -> PriorityLow
-        Priority.MEDIUM -> PriorityMedium
-        Priority.HIGH -> PriorityHigh
-        Priority.CRITICAL -> PriorityCritical
-    }
+    val priorityColor = getPriorityColor(priority)
 
     Surface(
         onClick = onClick,
@@ -48,12 +52,7 @@ fun PriorityChip(
 
 @Composable
 fun PriorityBadge(priority: Priority) {
-    val priorityColor = when (priority) {
-        Priority.LOW -> PriorityLow
-        Priority.MEDIUM -> PriorityMedium
-        Priority.HIGH -> PriorityHigh
-        Priority.CRITICAL -> PriorityCritical
-    }
+    val priorityColor = getPriorityColor(priority)
 
     Surface(
         shape = RoundedCornerShape(8.dp),
