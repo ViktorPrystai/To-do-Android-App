@@ -1,0 +1,79 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Clipboard/notepad body - scaled down and centered -->
+    <path
+        android:pathData="M38,32L70,32A2,2 0,0 1,72 34L72,76A2,2 0,0 1,70 78L38,78A2,2 0,0 1,36 76L36,34A2,2 0,0 1,38 32z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Clip at top -->
+    <path
+        android:pathData="M48,28L60,28A1.3,1.3 0,0 1,61.3 29.3L61.3,33A1.3,1.3 0,0 1,60 34.3L48,34.3A1.3,1.3 0,0 1,46.7 33L46.7,29.3A1.3,1.3 0,0 1,48 28z"
+        android:fillColor="#1976D2"/>
+
+    <!-- First checkbox (checked) - circle -->
+    <path
+        android:pathData="M43,44m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"/>
+
+    <!-- First checkbox - checkmark -->
+    <path
+        android:pathData="M41.7,44L42.8,45.1L44.5,42.8"
+        android:strokeLineJoin="round"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeLineCap="round"/>
+
+    <!-- First task line -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M49,44L65,44"
+        android:strokeWidth="0.8"
+        android:strokeColor="#BDBDBD"
+        android:strokeLineCap="round"/>
+
+    <!-- Second checkbox (checked) - circle -->
+    <path
+        android:pathData="M43,54m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"/>
+
+    <!-- Second checkbox - checkmark -->
+    <path
+        android:pathData="M41.7,54L42.8,55.1L44.5,52.8"
+        android:strokeLineJoin="round"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeLineCap="round"/>
+
+    <!-- Second task line -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M49,54L65,54"
+        android:strokeWidth="0.8"
+        android:strokeColor="#BDBDBD"
+        android:strokeLineCap="round"/>
+
+    <!-- Third checkbox (unchecked) - circle -->
+    <path
+        android:pathData="M43,64m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#9E9E9E"/>
+
+    <!-- Third task line -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M49,64L65,64"
+        android:strokeWidth="0.8"
+        android:strokeColor="#9E9E9E"
+        android:strokeLineCap="round"/>
+</vector>
