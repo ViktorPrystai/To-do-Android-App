@@ -18,5 +18,5 @@ val PriorityCritical = Color(0xFFF44336)  // Red
 
 // Theme colors
 val BluePrimary = Blue
-val BluePrimaryDark = DarkBlue
-val BluePrimaryLight = LightBlue
+//val BluePrimaryDark = DarkBlue
+//val BluePrimaryLight = LightBlue
